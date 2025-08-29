@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int ages[8] = {20,22,18,35,48,26,87,70};
+    float avg,sum=0;
+    int len = sizeof(ages)/sizeof(ages[0]);
+    for(int age:ages){
+        sum=sum+=age;
+    }
+    avg = sum/len;
+    cout<<avg;
+    
+}
